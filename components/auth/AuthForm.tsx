@@ -48,7 +48,7 @@ const AuthForm = () => {
           throw new Error(data.message || 'Something went wrong');
         }
 
-        return data;
+        router.replace('/profile');
       } catch (e) {
         toast.error(e.message);
       }
